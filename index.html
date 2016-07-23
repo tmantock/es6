@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          dataType: 'JSON',
+          url: 'http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=3ada3a03e32b69ed8439a913afab37e2',
+          method: 'GET',
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (err) {
+            console.log(err);
+          }
+        })
+      })
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
